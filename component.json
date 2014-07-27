@@ -1,0 +1,14 @@
+{
+  "name": "sweep",
+  "repo": "bredele/sweep",
+  "description": "spread operator",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
