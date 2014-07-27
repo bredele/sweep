@@ -33,4 +33,15 @@ describe("expand arguments", function() {
 		assert.deepEqual(arr, ['hello', 'olivier', 'amy', 'bruno', 'anne']); 
 	});
 
+	it('should spread function call', function() {
+		var cb = spread(function(arg1, arg2, arg3) {
+			assert.equal(arg1, 'foo');
+			assert.equal(arg2, 'bar');
+			assert.equal(arg3, 'beep');
+		});
+
+		cb(['foo', 'bar'], 'beep');
+	});
+
 });
+
