@@ -1,8 +1,8 @@
 {
   "name": "sweep",
   "repo": "bredele/sweep",
-  "description": "spread operator",
-  "version": "0.0.1",
+  "description": "partial spread operator implementation",
+  "version": "0.1.0",
   "keywords": [],
   "dependencies": {},
   "development": {},

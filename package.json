@@ -1,7 +1,7 @@
 {
   "name": "sweep",
-  "version": "0.0.0",
-  "description": "spread operator",
+  "version": "0.1.0",
+  "description": "partial spread operator implementation",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -12,6 +12,8 @@
   },
   "keywords": [
     "spread",
+    "array",
+    "push",
     "arguments"
   ],
   "author": "Olivier Wietrich <olivier.wietrich@gmail.com> (http://github.com/bredele)",
