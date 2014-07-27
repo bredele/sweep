@@ -1,6 +1,11 @@
 sweep
 =====
 
+  Sweep allows an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) are expected. 
+
+  Sweep is a partial implementation of the **spread** operator, part of the Harmony ECMSScript 6 proposal.
+
+
 ## Installation
 
 component:
@@ -14,11 +19,35 @@ nodejs:
 
 ## Usage
 
+## a better apply
+
+```js
+var args = [0, 1, 2];
+var cb = sweep(function(x, y, z) {
+	// do something with x, y, z
+});
+cb(args);
+```
+
+## to array
 
 ```js
 
+function() {
+  var arr = spread(arguments);
+  // arr is an array
+};
 ```
 
+## a better push
+
+```js
+var arr1 = [0, 1];
+var arr2 = [3, 4];
+
+var result = spread(arr1, 2, arr2);
+// => [0, 1, 2, 3, 4];
+```
 
 ## License
 
