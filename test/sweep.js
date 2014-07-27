@@ -27,4 +27,10 @@ describe("expand arguments", function() {
 		assert.deepEqual(arr, ['hello', 'olivier', 'amy', 'bruno']); 
 	});
 
+	it('should be a better array push', function() {
+		var arr = spread('hello', args('olivier', 'amy'), ['bruno', 'anne']);
+		assert(arr instanceof Array);
+		assert.deepEqual(arr, ['hello', 'olivier', 'amy', 'bruno', 'anne']); 
+	});
+
 });
