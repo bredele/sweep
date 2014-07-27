@@ -18,11 +18,11 @@
  * @api public
  */
 
-module.exports = function spread(fn) {
+module.exports = function spread(fn, scope) {
 	var arr = [];
 	if(typeof fn === 'function') {
 		return function() {
-			return fn.apply(null, spread.apply(null, arguments));
+			return fn.apply(scope, spread.apply(null, arguments));
 		};
 	}
 	for(var i = 0, l = arguments.length; i < l; i++) {
