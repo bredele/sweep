@@ -1,6 +1,6 @@
 {
   "name": "sweep",
-  "repo": "bredele/sweep",
+  "repository": "bredele/sweep",
   "description": "partial spread operator implementation",
   "version": "0.1.0",
   "keywords": [],
